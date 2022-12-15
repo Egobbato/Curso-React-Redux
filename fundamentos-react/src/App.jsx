@@ -8,7 +8,7 @@ export default function App(props) {
   return (
     <div id="app">
       <h1>Fundamentos React</h1>
-      <Aleatorio />
+      <Aleatorio min={1} max={60} />
       <Fragmento />
       <ComParametro Titulo="Situação do Aluno" aluno="Eduardo" nota={9.3} />
       <Primeiro />
