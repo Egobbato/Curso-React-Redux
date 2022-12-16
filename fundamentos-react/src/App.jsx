@@ -6,6 +6,7 @@ import Fragmento from "./components/basicos/Fragmento";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
 import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
 
 export default function App(props) {
   return (
@@ -18,7 +19,11 @@ export default function App(props) {
           color="#4153a3"
           border="#020848"
         >
-          <Familia sobrenome="Ferreira" />
+          <Familia sobrenome="Miranda">
+            <FamiliaMembro nome="Pedro" />
+            <FamiliaMembro nome="Ana" />
+            <FamiliaMembro nome="Gustavo" />
+          </Familia>
         </Card>
 
         <Card titulo="#04 - Desafio Aleatório" color="#02482c" border="#02482c">
